@@ -1,3 +1,3 @@
 <?php
 
-echo "こんいちわ　＾ー＾";
+echo "Hello there";
