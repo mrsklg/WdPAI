@@ -1,0 +1,54 @@
+.stats-container {
+    width: 100%;
+    gap: 1.6rem;
+    color: #FFF8E1;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.chart-container {
+    width: 100%;
+    border-radius: 1rem;
+    background: #FF8C42;
+    height: 12rem;
+    padding: 0.8rem;
+}
+
+.chart-container > div {
+    height: 10rem;
+    width: 100%;
+}
+
+.stats-general {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stats-general > div {
+    border-radius: 1rem;
+    width: 45%;
+    height: 10rem;
+    background: #FF8C42;
+    padding: 0.9rem 1.5rem;
+    text-align: center;
+}
+
+.stats-general > div > p {
+    font-size: 0.8rem;
+}
+
+.stats-general > div > p > span {
+    display: block;
+    margin: 1rem 0;
+    color: #BC4B51;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.44);
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.fa-chart-column {
+    color: #121212;
+}

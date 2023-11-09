@@ -1,17 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     margin: 0;
-    padding-top: 80px;
+    background-color: #FFF8E1;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    color: #454545;
+    /* padding-top: 80px; */
+}
+
+.body-nav {
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+}
+
+.body-popup {
+    padding: 4rem 2rem;
+    background: var(--background-blur-50, rgba(0, 0, 0, 0.50));
+    backdrop-filter: blur(8px);
+    background-image: url("https://images.pexels.com/photos/2128249/pexels-photo-2128249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.popup {
+    border-radius: 1rem;
+    background: #FF8C42;
+    width: 100%;
+    padding: 1.5rem;
+    min-height: 45rem;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+h1 {
+    color: #454545;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.6875rem;
+    max-width: 25rem;
+    align-self: flex-start;
+}
+
+h2 {
+    align-self: start;
+    margin: 1.5rem 0;
+}
+
+form {
+    width: 100%;
+    gap: 2rem;
+}
+
+input {
+    border-radius: 1rem;
+    border: 1px solid #676767;
+    background: #F9C784;
+    padding: 1.25rem 0.75rem;
+    width: 100%;
+}
+
+input::placeholder {
+    font-family: Inter;
+    font-size: 0.75rem;
+    color: #676767;
+}
+
+.default-btn {
+    border-radius: 1rem;
+    background: #FF8C42;
+    padding: 1rem 2rem;
+    color: #FFF8E1;
+    width: 100%;
+    text-align: center;
+    margin: 5.4rem;
+    border: none;
+}
+
+.popup-light-btn {
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background: #FFF8E1;
+    padding: 0.8125rem 1.25rem;
+    color: #121212;
+    font-family: Karla;
+    font-size: 1rem;
+}
+
+.popup-cancel-btn {
+    border: none;
+    background: none;
+    color: #FFF8E1;
+    font-family: Inter;
+    font-size: 0.8rem;
+}
+
+.comment {
+    color: #575757;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.comment > a {
+    color: #FF8C42;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 nav {
     /* background-color: black; */
-    color: white;
+    /* color: white;
     height: 80px;
     width: 100%;
     font-size: 1.5rem;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
+    /* height: 5rem; */
+    width: 100%;
+    background: #F9C784;
+    position: fixed;
+    bottom: 0;
+    padding: 1.6rem;
+    gap: calc(0.1 * 100vw);
+}
+
+.nav-avatar {
+    width: 2rem;
+    height: 2rem;
+    background-color: #FF8C42;
+    border-radius: 50%;
 }
 
 nav > ul {
@@ -24,7 +151,9 @@ nav > ul > li {
 
 main {
     width: 100vw;
-    background-color: aquamarine;
+    padding: 1.8rem;
+    gap: 1.5rem;
+    /* background-color: aquamarine; */
 }
 
 main > .elements {
@@ -53,4 +182,27 @@ main > .elements > .container > img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-column-space-around-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bookcover {
+    width: 40%;
+    height: 100%;
+    border-radius: 1.3rem;
+    background-image: url("https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-height: 840px) {
+    .body-popup {
+        padding: 9rem 2rem;
+    }
 }

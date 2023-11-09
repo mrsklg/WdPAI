@@ -1,0 +1,99 @@
+.book-info-container {
+    justify-content: space-between;
+    height: calc(0.3 * 100vh);
+}
+
+.reading-summary,
+.history,
+.book-info-container {
+    width: 100%;
+}
+
+.reading-progess {
+    height: 100%;
+    width: 50%;
+    gap: 0.6rem;
+    padding: 1.3rem 0.6rem;
+    text-align: center;
+    border-radius: 1rem;
+    background: #F9C784;
+}
+
+.bar,
+.progress-bar {
+    border-radius: 0.75rem;
+    height: 1rem;
+}
+
+.bar {
+    width: 100%;
+    background: #898989;
+}
+
+.progress-bar {
+    width: 50%;
+    background: #BC4B51;
+}
+
+.progress-data {
+    justify-content: space-around;
+    width: 100%;
+    gap: 5%;
+}
+
+.small-btn {
+    padding: 0.25rem;
+    color: #454545;
+    font-family: Inter;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background: #FCAF58;
+    box-shadow: 0px 0px 2px 1px rgba(18, 18, 18, 0.32);
+}
+
+.reading-summary {
+    border-radius: 1rem;
+    background: #F9C784;
+    padding: 0.4rem 0.8rem;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.reading-summary > p > span {
+    color: #343434;
+    font-weight: 600;
+}
+
+.history {
+    padding: 0.6rem;
+    border-radius: 1rem;
+    background: #F9C784;
+    gap: 0.8rem;
+}
+
+.history > .small-btn {
+    max-width: 5.8rem;
+    align-self: flex-end;
+}
+
+.session-info {
+    width: 100%;
+    border-radius: 0.75rem;
+    background: #FF8C42;
+    gap: 0.5rem;
+    padding: 0.4rem;
+}
+
+.session-details {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+.fa-book {
+    color: #121212;
+}

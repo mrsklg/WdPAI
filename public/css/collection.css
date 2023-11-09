@@ -1,0 +1,23 @@
+main {
+    padding: 0;
+}
+
+h1 {
+    margin-left: 1.5rem;
+}
+
+.book-list {
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+img {
+    border-radius: 1.3125rem;
+    width: 6.6875rem;
+    height: 9.4375rem;
+}
+
+.fa-box {
+    color: #121212;
+}

@@ -1,0 +1,96 @@
+form {
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+input {
+    border: none;
+    box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.25);
+}
+
+input[type=checkbox] {
+    box-shadow: none;
+}
+
+.checkbox-section {
+    width: 90%;
+    justify-content: space-between;
+}
+
+.checkbox-container {
+    cursor: pointer;
+    color: #343434;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.checkbox-container input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    border-radius: 0.375rem;
+    border: 1px solid #BC4B51;
+    background: #F9C784;
+    margin-right: 0.4rem;
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #BC4B51;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: inline-block;
+}
+
+.checkbox-container .checkmark:after {
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    width: 0.3rem;
+    height: 0.625rem;
+    border: solid #FFF8E1;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+.file-input {
+    width: 100%;
+}
+
+.file-input label {
+    gap: 0.6rem;
+    color: #676767;
+    font-family: Inter;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 6rem 0;
+    width: 100%;
+    border-radius: 1rem;
+    background: #F9C784;
+    box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
