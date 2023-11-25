@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Karla:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/stats.css">
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="/public/css/stats.css">
     <script src="https://kit.fontawesome.com/0d4592f9a9.js" crossorigin="anonymous"></script>
     <title>Statistics</title>
 </head>
@@ -15,13 +15,13 @@
     <main class="flex-column-space-around-center">
         <h1>Your reading stats</h1>
         <div class="stats-container flex-column-space-around-center">
-            <div class="chart-container flex-column-space-around-center">
+            <div class="chart-container all-time flex-column-space-around-center">
                 <h3>All time</h3>
                 <div>
                     chart
                 </div>
             </div>
-            <div class="chart-container flex-column-space-around-center">
+            <div class="chart-container last-year flex-column-space-around-center">
                 <h3>Last year</h3>
                 <div>
                     chart
@@ -37,12 +37,14 @@
             </div>
         </div>
     </main>
-    <nav class="flex-row-center-center">
-        <a href="./dashboard.html"><i class="fa-solid fa-house fa-2x"></i></a>
-        <a href="./current_book.html"><i class="fa-solid fa-book fa-2x"></i></a>
-        <a href="./collection.html"><i class="fa-solid fa-box fa-2x"></i></a>
-        <a href="./stats.html"><i class="fa-solid fa-chart-column fa-2x"></i></a>
-        <a class="nav-avatar">av</a>
+    <nav class="flex-row-center-center navbar">
+        <ul class="flex-row-center-center">
+            <li><a href="./dashboard"><i class="fa-solid fa-house fa-2x"></i></a></li>
+            <li><a href="./current_book"><i class="fa-solid fa-book fa-2x"></i></a></li>
+            <li><a href="./collection"><i class="fa-solid fa-box fa-2x"></i></a></li>
+            <li><a href="./stats"><i class="fa-solid fa-chart-column fa-2x"></i></a></li>
+            <li><a class="nav-avatar">av</a></li>
+        </ul>
     </nav>
 </body>
 </html>

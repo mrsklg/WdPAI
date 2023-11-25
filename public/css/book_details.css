@@ -26,3 +26,33 @@
     color: #343434;
     font-weight: 600;
 }
+
+.book-details {
+    width: 100%;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        align-self: center;
+    }
+
+    .book-details {
+        flex-direction: row;
+        height: 19rem;
+    }
+
+    .details-container,
+    .bookcover {
+        height: 100%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-height: 600px) and (orientation: portrait){
+    .body-popup {
+        height: unset;
+        padding: 13rem 2rem;
+    }
+}

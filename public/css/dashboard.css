@@ -18,7 +18,7 @@
 }
 
 .dashboard-tile > img {
-    width: 160%;
+    width: 100%;
     align-self: center;
 }
 
@@ -35,4 +35,32 @@
 
 .fa-house {
     color: #121212;
+}
+
+@media (min-width: 600px) {
+    .dashboard-tile {
+        height: calc(0.15 * 100vw);
+        max-height: 18rem;
+    }
+
+    .tile-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    .fa-house::after {
+        color: #121212;
+    }
+
+    h1::before {
+        content: '';
+        display: block;
+        height: 6rem;
+        background-image: url(../images/Atsumari.png);
+        background-repeat: no-repeat;
+        background-size: 22rem;
+        margin-bottom: 4rem;
+    }
 }

@@ -6,14 +6,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Karla:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/add_book.css">
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="/public/css/add_book.css">
     <script src="https://kit.fontawesome.com/0d4592f9a9.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body class="flex-row-center-center body-popup">
     <div class="popup">
-        <form id="bookForm" class="flex-column-space-around-center">
+        <!-- TODO: dodaj obsługę formularza -->
+        <form id="bookForm" class="flex-column-space-around-center" ENCTYPE="multipart/form-data">
             <div class="file-input">
                 <input type="file" id="file" class="file">
                 <label for="file" class="flex-column-space-around-center">
@@ -46,8 +47,8 @@
                 </label>
             </div>
         
-            <button type="button" class="popup-light-btn">Save Book</button>
-            <button type="button" class="popup-cancel-btn">Cancel</button>
+            <button type="submit" class="popup-light-btn">Save Book</button>
+            <a href="./dashboard" class="popup-cancel-btn">Cancel</a>
         </form>
     </div>
 </body>

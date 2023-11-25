@@ -52,3 +52,60 @@
 .fa-chart-column {
     color: #121212;
 }
+
+@media (min-width: 600px) {
+    .fa-chart-column::after {
+        color: #121212;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 2.25rem;
+    }
+
+    .body-nav > main {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .stats-container {
+        display: grid;
+        grid-template-areas: 
+            "all-time stats-general"
+            "last-year last-year";
+        row-gap: 3rem;
+        column-gap: 3.6rem;
+        width: 100%;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .all-time {
+        grid-area: all-time;
+        height: 100%;
+        font-size: 1.3rem;
+    }
+
+    .stats-general {
+        grid-area: stats-general;
+        height: 100%;
+    }
+
+    .stats-general > div {
+        height: 100%;
+    }
+
+    .stats-general > div > p {
+        font-size: 1.5rem;
+    }
+
+    .stats-general > div > p > span {
+        font-size: 5rem;
+    }
+
+    .last-year {
+        grid-area: last-year;
+        height: 100%;
+        font-size: 1.3rem;
+    }
+}
