@@ -15,7 +15,7 @@
         <div class="form-container">
             <h2>Welcome back!</h2>
             <form class="flex-column-space-around-center" action="login" method="POST">
-                <input type="text" name="username_email" placeholder="Username or email" required>
+                <input type="text" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit" class="default-btn">Login</button>
             </form>

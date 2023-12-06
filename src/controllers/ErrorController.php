@@ -2,18 +2,8 @@
 
 class ErrorController {
 
-    protected function render(string $template = null, array $variables = [])
+    function render()
     {
-        $templatePath = 'src/views/'.$template.'.html';
-        $output = 'File not found';
-                
-        if(file_exists($templatePath)){
-            extract($variables);
-            
-            ob_start();
-            include $templatePath;
-            $output = ob_get_clean();
-        }
-        print $output;
+        include "src/views/error_page.php";
     }
 }

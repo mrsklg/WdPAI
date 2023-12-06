@@ -14,10 +14,12 @@
         <img src="/public/images/Atsumari.png">
         <div class="form-container">
             <h2>Create an account</h2>
-            <form class="flex-column-space-around-center" method="POST">
-                <input type="text" name="username" placeholder="Username" required>
+            <form class="flex-column-space-around-center" method="POST" action="signup">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="surname" placeholder="Surname" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
                 <button type="submit" class="default-btn">Create account</button>
             </form>
             <p class="comment">I Already Have an Account. <a href="./login">Login</a></p>

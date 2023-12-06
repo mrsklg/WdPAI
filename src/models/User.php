@@ -1,10 +1,10 @@
 <?php
 
 class User {
-    private $email;
-    private $password;
-    private $name;
-    private $surname;
+    private string $email;
+    private string $password;
+    private string $name;
+    private string $surname;
 
     public function __construct(
         string $email,
@@ -23,7 +23,7 @@ class User {
         return $this->email;
     }
 
-    public function getPassword()
+    public function getPassword(): string
     {
         return $this->password;
     }

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Karla:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/global.css">
-    <link rel="stylesheet" href="/public/css/reading_session.css">
+    <link rel="stylesheet" href="/public/css/end_reading_session.css">
     <script src="https://kit.fontawesome.com/0d4592f9a9.js" crossorigin="anonymous"></script>
     <title>Reading session</title>
 </head>
@@ -25,8 +25,18 @@
             </div>
         </div>
         <button class="popup-light-btn">Pause</button>
-        <a href="./end_reading_session" class="popup-light-btn">Stop</a>
+        <button class="popup-light-btn">Stop</button>
         <a href="./current_book" class="popup-cancel-btn light">Cancel</a>
+    </div>
+    <div class="blur">
+        <div class="end-session-popup flex-column-space-around-center">
+            <h2>End session</h2>
+            <form id="endSessionForm" class="flex-column-space-around-center">
+                <input type="number" id="pageNumber" placeholder="Number of page you got to" required>
+                <button type="button" class="default-btn">Save</button>
+                <a href="./reading_session" class="popup-cancel-btn">Cancel</a>
+            </form>
+        </div>
     </div>
 </body>
 </html>

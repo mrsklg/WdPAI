@@ -16,24 +16,24 @@
         <h1>Book details</h1>
         <div class="book-details flex-column-space-around-center">
             <div class="bookcover flex-row-center-center">
-                <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg" class="cover-img" alt="">
+                <img src=<?= $book->getCoverUrl() ?> class="cover-img" alt="">
             </div>
             <div class="flex-column-space-around-center details-container">
                 <div>
                     <p>Title:</p>
-                    <p id="title" class="details-text">Zbrodnia i kara</p>
+                    <p id="title" class="details-text"><?= $book->getTitle() ?></p>
                 </div>
                 <div>
                     <p>Author:</p>
-                    <p id="author" class="details-text">Fiodor Dostojewski</p>
+                    <p id="author" class="details-text"><?= $book->getAuthor() ?></p>
                 </div>
                 <div>
                     <p>Pages:</p>
-                    <p id="num-of-pages" class="details-text">400</p>
+                    <p id="num-of-pages" class="details-text"><?= $book->getNumOfPages() ?></p>
                 </div>
                 <div>
                     <p>Genre:</p>
-                    <p id="genre" class="details-text">Novel</p>
+                    <p id="genre" class="details-text"><?= $book->getGenre() ?></p>
                 </div>
             </div>
         </div>

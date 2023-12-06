@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/public/css/global.css">
     <link rel="stylesheet" href="/public/css/current_book.css">
     <script src="https://kit.fontawesome.com/0d4592f9a9.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Current book</title>
 </head>
 <body class="flex-row-center-center body-nav">
     <main class="flex-column-space-around-center main-grid">
@@ -62,7 +62,7 @@
         </div>
     </main>
     <nav class="flex-row-center-center navbar">
-        <ul class="flex-row-center-center">
+        <ul class="flex-row-center-center nav-list">
             <li><a href="./dashboard"><i class="fa-solid fa-house fa-2x"></i></a></li>
             <li><a href="./current_book"><i class="fa-solid fa-book fa-2x"></i></a></li>
             <li><a href="./collection"><i class="fa-solid fa-box fa-2x"></i></a></li>

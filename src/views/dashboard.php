@@ -38,7 +38,7 @@
         </div>
     </main>
     <nav class="flex-row-center-center navbar">
-        <ul class="flex-row-center-center">
+        <ul class="flex-row-center-center nav-list">
             <li><a href="./dashboard"><i class="fa-solid fa-house fa-2x"></i></a></li>
             <li><a href="./current_book"><i class="fa-solid fa-book fa-2x"></i></a></li>
             <li><a href="./collection"><i class="fa-solid fa-box fa-2x"></i></a></li>
@@ -46,92 +46,6 @@
             <li><a class="nav-avatar">av</a></li>
         </ul>
     </nav>
-    <!-- <nav class="flex-row-center-center">
-        <div>img</div>
-        <ul class="flex-row-center-center">
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-            <li>create</li>
-        </ul>
-    </nav> -->
-    <!-- <h1>Dashboard</h1> -->
-    <!-- <main class="flex-row-center-center">
-        <div class="elements">
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?nature" alt="Nature">
-                <p>Beautiful nature scene</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?architecture" alt="Architecture">
-                <p>Amazing architecture</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?food" alt="Food">
-                <p>Delicious food</p>
-            </div>
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?people" alt="Nature Image">
-                <p>Short Description 1</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?city" alt="City Image">
-                <p>Short Description 2</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?travel" alt="Nature">
-                <p>Beautiful nature scene</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?animals" alt="Architecture">
-                <p>Amazing architecture</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?technology" alt="Food">
-                <p>Delicious food</p>
-            </div>
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?fashion" alt="Nature Image">
-                <p>Short Description 1</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?music" alt="City Image">
-                <p>Short Description 2</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?sports" alt="Architecture">
-                <p>Amazing architecture</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?food" alt="Food">
-                <p>Delicious food</p>
-            </div>
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?nature" alt="Nature">
-                <p>Beautiful nature scene</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?architecture" alt="Architecture">
-                <p>Amazing architecture</p>
-            </div>
-
-            <div class="container">
-                <img class="image" src="https://source.unsplash.com/300x200/?books" alt="Architecture">
-                <p>Amazing architecture</p>
-            </div>
-        </div>
-        <div class="sidebar">sidebar</div>
-    </main> -->
 </body>
 
 </html>

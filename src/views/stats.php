@@ -38,7 +38,7 @@
         </div>
     </main>
     <nav class="flex-row-center-center navbar">
-        <ul class="flex-row-center-center">
+        <ul class="flex-row-center-center nav-list">
             <li><a href="./dashboard"><i class="fa-solid fa-house fa-2x"></i></a></li>
             <li><a href="./current_book"><i class="fa-solid fa-book fa-2x"></i></a></li>
             <li><a href="./collection"><i class="fa-solid fa-box fa-2x"></i></a></li>

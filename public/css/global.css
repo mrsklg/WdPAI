@@ -54,14 +54,14 @@ h2 {
 
 form {
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 input {
     border-radius: 1rem;
     border: 1px solid #676767;
     background: #F9C784;
-    padding: 1.25rem 0.75rem;
+    padding: 0.8rem 0.75rem;
     width: 100%;
 }
 
@@ -191,15 +191,18 @@ main > .elements > .container > img {
     align-items: center;
 }
 
+.nav-list {
+    justify-content: space-around;
+    padding: 0;
+    gap: 0.8rem;
+}
+
+
 .bookcover {
     width: 40%;
     height: 100%;
     border-radius: 1.3rem;
     overflow: hidden;
-    /* background-image: url("https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg"); */
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 .cover-img {

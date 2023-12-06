@@ -13,8 +13,7 @@
 </head>
 <body class="flex-row-center-center body-popup">
     <div class="popup">
-        <!-- TODO: dodaj obsługę formularza -->
-        <form id="bookForm" class="flex-column-space-around-center" ENCTYPE="multipart/form-data">
+        <form id="bookForm" class="flex-column-space-around-center" action="add_book" method="POST" ENCTYPE="multipart/form-data">
             <div class="file-input">
                 <input type="file" id="file" class="file">
                 <label for="file" class="flex-column-space-around-center">

@@ -17,75 +17,15 @@
         <div class="book-list flex-row-center-center">
             <?php foreach($books as $book): ?>
                 <div class="collection-tile">
-                    <a href="./book_details">
+                    <a href="./book_details?title=<?= $book->getTitle() ?>">
                         <img src=<?= $book->getCoverUrl() ?> >
                     </a>
                 </div>
             <?php endforeach; ?>
-            <!-- <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/zbrodnia-i-kara-b-iext123430833.jpg">
-                </a>
-            </div> -->
         </div>
     </main>
     <nav class="flex-row-center-center navbar">
-        <ul class="flex-row-center-center">
+        <ul class="flex-row-center-center nav-list">
             <li><a href="./dashboard"><i class="fa-solid fa-house fa-2x"></i></a></li>
             <li><a href="./current_book"><i class="fa-solid fa-book fa-2x"></i></a></li>
             <li><a href="./collection"><i class="fa-solid fa-box fa-2x"></i></a></li>

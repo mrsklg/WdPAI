@@ -2,7 +2,7 @@
 
 class AppController {
 
-    private $request;
+    private string $request;
 
     public function __construct()
     {
@@ -32,9 +32,7 @@ class AppController {
             ob_start();
             include $templatePath;
             $output = ob_get_clean();
-        } //else {
-        //     // dodaj stronę błędu
-        // }
+        }
         print $output;
     }
 
