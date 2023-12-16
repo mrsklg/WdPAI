@@ -197,6 +197,9 @@ main > .elements > .container > img {
     gap: 0.8rem;
 }
 
+.messages {
+    width: 100%;
+}
 
 .bookcover {
     width: 40%;

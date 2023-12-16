@@ -5,14 +5,14 @@ class Book {
     private string $author;
     private string $genre;
     private string $coverUrl;
-    private int $num_of_pages;
+    private int $numOfPages;
 
-    public function __construct(string $title, string $author, string $genre, string $coverUrl, int $num_of_pages) {
+    public function __construct(string $title, string $author, string $genre, string $coverUrl, int $numOfPages) {
         $this->title = $title;
         $this->author = $author;
         $this->genre = $genre;
         $this->coverUrl = $coverUrl;
-        $this->num_of_pages = $num_of_pages;
+        $this->numOfPages = $numOfPages;
     }
 
     public function getTitle(): string {
@@ -32,6 +32,6 @@ class Book {
     }
     
     public function getNumOfPages(): int {
-        return $this->num_of_pages;
+        return $this->numOfPages;
     }
 }

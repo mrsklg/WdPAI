@@ -110,7 +110,7 @@
             "title book-info"
             "history book-info"
             "history stats";
-        row-gap: 4.3rem;
+        row-gap: 3.8rem;
         column-gap: 3.6rem;
         width: 100%;
         grid-template-columns: repeat(2, 50%);
