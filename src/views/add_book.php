@@ -13,16 +13,7 @@
 </head>
 <body class="flex-row-center-center body-popup">
     <div class="popup">
-    <div class="messages">
-        <?php
-            if(isset($messages)){
-                foreach($messages as $message) {
-                    echo $message;
-                }
-            }
-        ?>
-    </div>
-        <form id="bookForm" class="flex-column-space-around-center" action="addBook" method="POST" ENCTYPE="multipart/form-data">
+        <form id="bookForm" class="flex-column-space-around-center" action="add_book" method="POST" ENCTYPE="multipart/form-data">
             <div class="file-input">
                 <input type="file" id="file" class="file" name="file">
                 <label for="file" class="flex-column-space-around-center">
@@ -33,13 +24,13 @@
                 </label>
             </div>
         
-            <input type="text" id="title"  placeholder="Add title">
+            <input type="text" id="title" name="title"  placeholder="Add title">
         
-            <input type="text" id="author"  placeholder="Add author">
+            <input type="text" id="author" name="author" placeholder="Add author's name and surname">
         
-            <input type="number" id="pages"  placeholder="Number of pages">
+            <input type="number" id="pages" name="pages" placeholder="Number of pages">
         
-            <input type="text" id="genre"  placeholder="Genre">
+            <input type="text" id="genre" name="genre" placeholder="Genre">
         
             <div class="checkbox-section flex-row-center-center">
                 <label class="checkbox-container flex-row-center-center">

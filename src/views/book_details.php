@@ -25,7 +25,7 @@
                 </div>
                 <div>
                     <p>Author:</p>
-                    <p id="author" class="details-text"><?= $book->getAuthor() ?></p>
+                    <p id="author" class="details-text"><?= implode(", ", $book->getAuthor()) ?></p>
                 </div>
                 <div>
                     <p>Pages:</p>
@@ -33,7 +33,7 @@
                 </div>
                 <div>
                     <p>Genre:</p>
-                    <p id="genre" class="details-text"><?= $book->getGenre() ?></p>
+                    <p id="genre" class="details-text"><?= implode(", ", $book->getGenre()) ?></p>
                 </div>
             </div>
         </div>

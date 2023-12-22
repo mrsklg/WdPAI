@@ -2,22 +2,16 @@
 
 require_once 'AppController.php';
 require_once __DIR__ .'/../models/User.php';
+require_once __DIR__.'/../repository/UsersRepository.php';
 
 class SecurityController extends AppController {
     
-    private array $userRepository;
+    private $userRepository;
     
     public function __construct()
     {
-     $this->userRepository = [
-        new User('jsnow@pk.edu.pl', 'admin', 'Johnny', 'Snow'),
-        new User('anowak@gmail.com', 'kochamKotki123', 'Anna', 'Nowak'),
-        new User('blabla.meh@mail.pl', password_hash('ballab', PASSWORD_BCRYPT), 'Bla', 'Blameh')
-    ];   
-    }
-
-    public function addUser(User $newUser) {
-        $this->userRepository[] = $newUser;
+        parent::__construct();
+        $this->userRepository = new UsersRepository();
     }
     
     public function login() {
@@ -29,7 +23,7 @@ class SecurityController extends AppController {
         $email = $_POST['email'];
         $password = $_POST['password'];
         
-        $user = $this->getUserByEmail($email);
+        $user = $this->userRepository->getUser($email);
 
         if (!$user) {
             return $this->render('login');
@@ -42,6 +36,8 @@ class SecurityController extends AppController {
         if (!password_verify($password, $user->getPassword())) {
             return $this->render('login', ['messages' => ['Wrong password!']]);
         }
+
+        $_SESSION['email'] = $user->getEmail();
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/dashboard");
@@ -66,17 +62,12 @@ class SecurityController extends AppController {
 
         $user = new User($email, password_hash($password, PASSWORD_BCRYPT), $name, $surname);
 
-        $this->addUser($user);
-
-        return $this->render('login', ['messages' => ['You\'ve been succesfully registrated!']]);
-    }
-
-    private function getUserByEmail(string $email) {
-        foreach ($this->userRepository as $user) {
-            if ($user->getEmail() === $email) {
-                return $user;
-            }
+        try {
+            $this->userRepository->addUser($user);
+        } catch (Exception $e) {
+            return $this->render('signup', ['messages' => [$e->getMessage()]]);
         }
-        return null;
+    
+        return $this->render('login', ['messages' => ['You\'ve been succesfully registered!']]);
     }
 }

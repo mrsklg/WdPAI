@@ -14,6 +14,15 @@
         <img src="/public/images/Atsumari.png">
         <div class="form-container">
             <h2>Welcome back!</h2>
+            <div class="messages">
+                <?php
+                    if(isset($messages)){
+                        foreach($messages as $message) {
+                           echo "<p>$message</p>";
+                        }
+                    }
+                ?>
+            </div>
             <form class="flex-column-space-around-center" action="login" method="POST">
                 <input type="text" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>

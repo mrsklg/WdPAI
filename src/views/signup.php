@@ -14,6 +14,15 @@
         <img src="/public/images/Atsumari.png">
         <div class="form-container">
             <h2>Create an account</h2>
+            <div class="messages">
+                <?php
+                    if(isset($messages)){
+                        foreach($messages as $message) {
+                           echo "<p>$message</p>";
+                        }
+                    }
+                ?>
+            </div>
             <form class="flex-column-space-around-center" method="POST" action="signup">
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="text" name="surname" placeholder="Surname" required>

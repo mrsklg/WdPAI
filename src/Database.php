@@ -1,7 +1,7 @@
-<!-- warto żeby była singletonem -->
 <?php
 
 require_once "config.php";
+// <!-- warto żeby była singletonem -->
 
 class Database {
     private $username;
