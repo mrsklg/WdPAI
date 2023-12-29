@@ -19,7 +19,6 @@ class DefaultController extends AppController {
 
     function book_details() {
         $bookTitle = isset($_GET['title']) ? $_GET['title'] : null;
-        // $book = $this->getBookByTitle($bookTitle);
         $this->render('book_details', ["book" => $this->booksRepository->getBook($bookTitle)]);
     }
 
@@ -45,5 +44,13 @@ class DefaultController extends AppController {
 
     function stats() {
         $this->render('stats');
+    }
+    
+    function settings() {
+        $this->render('settings');
+    }
+    
+    function settings_admin() {
+        $this->render('settings_admin');
     }
 }

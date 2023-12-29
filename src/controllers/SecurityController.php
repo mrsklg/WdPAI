@@ -37,7 +37,8 @@ class SecurityController extends AppController {
             return $this->render('login', ['messages' => ['Wrong password!']]);
         }
 
-        $_SESSION['email'] = $user->getEmail();
+        $user_id = $this->userRepository->getUserId($user->getEmail());
+        setcookie("user_id", $user_id, time() + 3600, "/");
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/dashboard");

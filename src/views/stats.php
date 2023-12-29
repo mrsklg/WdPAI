@@ -43,7 +43,7 @@
             <li><a href="./current_book"><i class="fa-solid fa-book fa-2x"></i></a></li>
             <li><a href="./collection"><i class="fa-solid fa-box fa-2x"></i></a></li>
             <li><a href="./stats"><i class="fa-solid fa-chart-column fa-2x"></i></a></li>
-            <li><a class="nav-avatar">av</a></li>
+            <li><a href="<?= $_COOKIE['user_id'] == 40 ? "settings_admin" : "settings" ?>" class="nav-avatar"><img class="avatar-img-nav" src="/public/images/avatar-img.png"></a></li>
         </ul>
     </nav>
 </body>

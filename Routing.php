@@ -34,7 +34,12 @@ class Routing {
         } else {
             $controller = self::$routes[$action];
             $object = new $controller;
-            $object->$action();
+            if ($_COOKIE['user_id'] == null && !($object instanceof SecurityController) && $action != "start_screen") {
+                $controller = new ErrorController();
+                $controller->render();
+            } else {
+                $object->$action();
+            }
         }
     }
 }

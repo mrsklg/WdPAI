@@ -1,0 +1,21 @@
+@media (min-width: 600px) {
+    .images > img {
+        width: 12rem;;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .basic-settings {
+        gap: 1rem;
+    }
+
+    .form-container {
+        padding: 1rem 5.6rem;
+    }
+
+    .default-btn {
+        margin: 0.8rem 0;
+    }
+}

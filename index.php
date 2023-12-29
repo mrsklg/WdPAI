@@ -16,5 +16,7 @@ Routing::get('dashboard', 'DefaultController');
 Routing::get('reading_session', 'DefaultController');
 Routing::get('end_reading_session', 'DefaultController');
 Routing::get('stats', 'DefaultController');
+Routing::get('settings', 'DefaultController');
+Routing::get('settings_admin', 'DefaultController');
 
 Routing::run($path);

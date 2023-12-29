@@ -12,10 +12,12 @@ class BooksRepository extends Repository {
     public function getBooks(): array
     {
         $result = [];
+        $user_id = $_COOKIE['user_id'];
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM booksinfoview;
+            SELECT * FROM booksinfoview where user_id = :user_id;
         ');
+        $stmt->bindParam(':user_id', $user_id, PDO::PARAM_STR);
         $stmt->execute();
         // $books = $stmt->fetchAll(PDO::FETCH_CLASS, "Book");
         $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
